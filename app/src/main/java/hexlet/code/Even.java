@@ -4,18 +4,6 @@ import java.util.Scanner;
 
 public class Even {
 
-    // Генерируем случайное число в диапазоне [min, max]
-    public static int genRand() {
-        int min = 0;
-        int max = 1000;
-        return min + (int) (Math.random() * ((max - min) + 1));
-    }
-
-    // Проверка числа на четность: "yes" если четное и "no" если нечетное
-    public static String isEven(int number) {
-        return number % 2 == 0 ? "yes" : "no";
-    }
-
     public static void game() {
         Scanner scanner = new Scanner(System.in);
         int number;
@@ -23,17 +11,17 @@ public class Even {
         String player = Cli.greeter();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         while (count < 3) {
-            number = genRand();
+            number = Utils.genRand(0, 100);
             System.out.println("Question: " + number);
             System.out.print("Your answer: ");
             String answer = scanner.next();
-            if (answer.equalsIgnoreCase(isEven(number))) {
+            if (answer.equalsIgnoreCase(Utils.isEven(number))) {
                 count++;
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + answer
                                        + "' is wrong answer ;(. Correct answer was "
-                                       + "'" + isEven(number) + "'.");
+                                       + "'" + Utils.isEven(number) + "'.");
                 System.out.println("Let's try again, " + player);
                 return;
             }

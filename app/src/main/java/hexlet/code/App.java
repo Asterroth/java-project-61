@@ -17,6 +17,9 @@ public class App {
                 case 2:
                     Even.game();
                     break;
+                case 3:
+                    Calc.game();
+                    break;
                 default:
                     System.out.println("Please enter 1, 2, 3 or press 0 for exit.");
                     break;
@@ -28,6 +31,7 @@ public class App {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
+        System.out.println("3 - Calc");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
     }
