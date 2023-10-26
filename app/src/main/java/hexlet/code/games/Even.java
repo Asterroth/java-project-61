@@ -1,12 +1,12 @@
-package hw1_static.games;
+package hexlet.code.games;
 
-import hw1_static.Cli;
-import hw1_static.Utils;
+import hexlet.code.Cli;
+import hexlet.code.Utils;
 
 import java.util.Scanner;
 
 public class Even {
-    final String description = "Description Even game";
+    final String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public String getDescription() {
         return description;

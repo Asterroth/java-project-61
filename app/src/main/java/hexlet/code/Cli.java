@@ -1,9 +1,9 @@
-package hw1_static;
+package hexlet.code;
 
 import java.util.Scanner;
 
 public class Cli {
-    // Printing greeter and getting player name
+    // Print greeter and get player name
     public static String greeter() {
         Scanner scan = new Scanner(System.in);
         String userName;
@@ -13,19 +13,19 @@ public class Cli {
         System.out.println("Hello, " + userName + "!");
         return userName;
     }
-    // Printing menu
+    // Print menu
     public static void printMenu() {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
-        System.out.println("5 - Prime");
-        System.out.println("6 - Progression");
+        System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
     }
-    // Printing wrong answer message
+    // Print wrong answer message
     public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
         System.out.println("'" + answer
                 + "' is wrong answer ;(. Correct answer was "
