@@ -23,3 +23,9 @@ G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b/f/bf
 Q.idea/sonarlint/securityhotspotstore/0/c/0c0610d12d971107a85160c6a927e94a1062a01a,b/5/b5e8129b84634986ad9fd0cf5af3df6eb4fc9dfb
 S
 #src/main/java/hexlet/code/Even.java,4/4/44fefc925ca055e7c3a187b5635e5cb5f8cf5aad
+T
+$src/main/java/hexlet/code/Utils.java,b/8/b89c2b762fb33fa35c34b82bce8c5d678b5748ed
+S
+#src/main/java/hexlet/code/Calc.java,1/4/14845b3b826d228135f6f74aa7f9f91b95dea922
+S
+#src/main/java/hexlet/code/Game.java,b/f/bf4c76026940eb856d84b5b63d896d840fd654da

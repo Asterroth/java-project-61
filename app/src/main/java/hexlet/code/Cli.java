@@ -1,6 +1,6 @@
 package hexlet.code;
 import java.util.Scanner;
-public class Cli {
+class Cli {
 
     public static String greeter() {
         Scanner scan = new Scanner(System.in);

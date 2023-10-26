@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d7f7725-3582-429c-9e4e-03c28a200aa8" name="Changes" comment="add Calc game and Utils class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20ba1b8023d88c5a62c5660a1840051737406cca" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20ba1b8023d88c5a62c5660a1840051737406cca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe81037d447bc9092b62547057d80e2bbc743d37" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe81037d447bc9092b62547057d80e2bbc743d37" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Cli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Cli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Utils.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2WongipjH70xeKNnEPvNWBQpBHE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/am/java-project-61/app/config/checkstyle/checkstyle.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/am/java-project-61/app/src/main/java/hexlet/code/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Gradle.app [run]">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hexlet.code.App" />
+      <module name="app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hexlet.code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="app [installDist]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="installDist" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="app [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Gradle.app [compileJava]" />
+      <item itemvalue="Gradle.app [installDist]" />
+      <item itemvalue="Gradle.app [run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.app [installDist]" />
+        <item itemvalue="Gradle.app [run]" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.app [compileJava]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d7f7725-3582-429c-9e4e-03c28a200aa8" name="Changes" comment="" />
+      <created>1697407915490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697407915490</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add java-project-61 initial">
+      <option name="closed" value="true" />
+      <created>1697408537171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697408537171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add java-project-61 initial 2">
+      <option name="closed" value="true" />
+      <created>1697408905336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697408905336</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add app/src">
+      <option name="closed" value="true" />
+      <created>1697409077575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697409077575</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add Cli class">
+      <option name="closed" value="true" />
+      <created>1697479110796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697479110796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add makefile">
+      <option name="closed" value="true" />
+      <created>1697658082352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658082352</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add checkstyle">
+      <option name="closed" value="true" />
+      <created>1697660949397</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697660949397</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add empty start menu">
+      <option name="closed" value="true" />
+      <created>1697665012684</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697665012684</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add Even class">
+      <option name="closed" value="true" />
+      <created>1697667938004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697667938004</updated>
+    </task>
+    <task id="LOCAL-00009" summary="edit Even game">
+      <option name="closed" value="true" />
+      <created>1697746363386</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697746363386</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add Calc game and Utils class">
+      <option name="closed" value="true" />
+      <created>1697751745786</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697751745786</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add java-project-61 initial" />
+    <MESSAGE value="add java-project-61 initial 2" />
+    <MESSAGE value="add app/src" />
+    <MESSAGE value="add Cli class" />
+    <MESSAGE value="add makefile" />
+    <MESSAGE value="add checkstyle" />
+    <MESSAGE value="add empty start menu" />
+    <MESSAGE value="add Even class" />
+    <MESSAGE value="edit Even game" />
+    <MESSAGE value="add Calc game and Utils class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Calc game and Utils class" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,6 +1,6 @@
 package hexlet.code;
 
-public class Utils {
+class Utils {
 
     // Генерируем случайное число в диапазоне [min, max]
     public static int genRand(int min, int max) {

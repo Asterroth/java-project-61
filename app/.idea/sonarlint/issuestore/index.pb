@@ -23,3 +23,9 @@ P
  config/checkstyle/checkstyle.xml,e/1/e1f2dc84f565ee8ad14a89aa864c602bc570e082
 S
 #src/main/java/hexlet/code/Even.java,4/4/44fefc925ca055e7c3a187b5635e5cb5f8cf5aad
+T
+$src/main/java/hexlet/code/Utils.java,b/8/b89c2b762fb33fa35c34b82bce8c5d678b5748ed
+S
+#src/main/java/hexlet/code/Calc.java,1/4/14845b3b826d228135f6f74aa7f9f91b95dea922
+S
+#src/main/java/hexlet/code/Game.java,b/f/bf4c76026940eb856d84b5b63d896d840fd654da
