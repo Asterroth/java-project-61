@@ -29,3 +29,5 @@ S
 #src/main/java/hexlet/code/Calc.java,1/4/14845b3b826d228135f6f74aa7f9f91b95dea922
 S
 #src/main/java/hexlet/code/Game.java,b/f/bf4c76026940eb856d84b5b63d896d840fd654da
+?
+settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
