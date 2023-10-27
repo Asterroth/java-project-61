@@ -19,17 +19,17 @@ public class Progression {
 
     String genSequence() {
         String result = "";
-        int first = Utils.getRandom(0, 50);
+        int item = Utils.getRandom(0, 50);
         int step = Utils.getRandom(1, 5);
         int unknownItem = Utils.getRandom(0, 5);
         for (int i = 0; i < 6; i++) {
             if (i != unknownItem) {
-                result = result + Integer.toString(first) + " ";
-                first += step;
+                result = result + Integer.toString(item) + " ";
+                item += step;
             } else {
                 result = result + ".. ";
-                setUnknown(first);
-                first += step;
+                setUnknown(item);
+                item += step;
             }
         }
         return result;
