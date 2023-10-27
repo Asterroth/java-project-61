@@ -1,6 +1,11 @@
 package hexlet.code;
 
 import java.util.Scanner;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 public class App {
     public static void main(String[] args) {
@@ -13,23 +18,27 @@ public class App {
                     Cli.greeter();
                     return;
                 case "2":
-                    Engine.gameRound(2, maxRounds);
+                    Even evenGame = new Even();
+                    evenGame.runGame(maxRounds);
                     return;
                 case "3":
-                    Engine.gameRound(3, maxRounds);
+                    Calc calcGame = new Calc();
+                    calcGame.runGame(maxRounds);
                     return;
                 case "4":
-                    Engine.gameRound(4, maxRounds);
+                    Gcd gcdGame = new Gcd();
+                    gcdGame.runGame(maxRounds);
                     return;
                 case "5":
-                    Engine.gameRound(5, maxRounds);
+                    Progression progressionGame = new Progression();
+                    progressionGame.runGame(maxRounds);
                     return;
                 case "6":
-                    Engine.gameRound(6, maxRounds);
+                    Prime primeGame = new Prime();
+                    primeGame.runGame(maxRounds);
                     return;
                 default:
-                    scanner.close();
-                    return;
+                    System.exit(0);
             }
         }
     }

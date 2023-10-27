@@ -2,28 +2,22 @@ package hexlet.code.games;
 
 import hexlet.code.Cli;
 import hexlet.code.Utils;
+import hexlet.code.Engine;
 
 import java.util.Scanner;
 
 public class Prime {
     final String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    String player = Cli.greeter();
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void game(String playerName) {
-        Scanner sc = new Scanner(System.in);
-        int num = Utils.getRandom(0, 100);
-        System.out.println("Question: " + num);
-        System.out.print("Your answer: ");
-        String answer = sc.next();
-        if (answer.equalsIgnoreCase(isPrime(num))) {
-            System.out.println("Correct!");
-        } else {
-            Cli.wrongAnswer(isPrime(num), answer, playerName);
-            System.exit(0);
+    public void runGame(int maxRounds) {
+        System.out.println(description);
+        for (var i = 0; i < maxRounds; i++) {
+            int num = Utils.getRandom(0, 100);
+            Engine newRound = new Engine(Integer.toString(num), isPrime(num));
+            newRound.checkAnswer(player);
         }
+        System.out.println("Congratulation, " + player + "!");
     }
 
     private static String isPrime(int num) {

@@ -2,36 +2,33 @@ package hexlet.code.games;
 
 import hexlet.code.Cli;
 import hexlet.code.Utils;
-import java.util.Scanner;
+import hexlet.code.Engine;
 
 public class Calc {
     final String description = "What is the result of the expression?";
+    String player = Cli.greeter();
 
-    public String getDescription() {
-        return description;
+    public void runGame(int maxRounds) {
+        System.out.println(description);
+        for (var i = 0; i < maxRounds; i++) {
+            int num1 = Utils.getRandom(0, 100);
+            int num2 = Utils.getRandom(0, 100);
+            String action = Utils.mathAction();
+            String question = Integer.toString(num1) + " "
+                    + action + " " + Integer.toString(num2);
+            Engine newRound = new Engine(question, calcAction(num1, num2, action));
+            newRound.checkAnswer(player);
+        }
+        System.out.println("Congratulation, " + player + "!");
     }
 
-    public void game(String playerName) {
-        Scanner sc = new Scanner(System.in);
-        String action = Utils.mathAction();
-        int num1 = Utils.getRandom(0, 100);
-        int num2 = Utils.getRandom(0, 100);
+    public String calcAction(int num1, int num2, String action) {
         int result = 0;
-        System.out.println("Question: " + num1
-                            + " " + action
-                            + " " + num2);
-        System.out.print("Your answer: ");
-        String answer = sc.next();
         if (action.equals("+")) {
             result = num1 + num2;
         } else if (action.equals("*")) {
             result = num1 * num2;
         }
-        if (answer.equalsIgnoreCase(Integer.toString(result))) {
-            System.out.println("Correct!");
-        } else {
-            Cli.wrongAnswer(Integer.toString(result), answer, playerName);
-            System.exit(0);
-        }
+        return String.valueOf(result);
     }
 }
