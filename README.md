@@ -1,4 +1,25 @@
-## java-project-61
-[![Maintainability](https://api.codeclimate.com/v1/badges/e81546508c29ddde0b1b/maintainability)](https://codeclimate.com/github/Asterroth/java-project-61/maintainability)
+### Hexlet tests and linter status:
 
-[![asciicast](https://asciinema.org/a/Pvd0EdRjXo5jdyo2ppfSY8X2L.svg)](https://asciinema.org/a/Pvd0EdRjXo5jdyo2ppfSY8X2L)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4724d576017c9ca24afd/maintainability)](https://codeclimate.com/github/fey/java-project-61/maintainability)
+
+# Brain Games
+
+CLI games bundle
+
+## Requirements
+
+* Java 20+
+* Linux
+* Make tool
+
+## Commands
+
+See [Makefile](./app/Makefile)
+
+### Demo
+
+* [Brain Even](https://asciinema.org/a/KmiKZ0ZogL124tYSGly9UibeF)
+* [Brain Calc](https://asciinema.org/a/lG06rtJfz2vyIvfLRhheFeARK)
+* [Brain GCD](https://asciinema.org/a/3klfYa52uVz6KS7tEsnfXq4UI)
+* [Brain Progression](https://asciinema.org/a/qtWHBdWyM7kVYVxUfX25MfB2x)
+
