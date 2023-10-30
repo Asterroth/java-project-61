@@ -14,7 +14,7 @@ CLI games bundle
 
 ## Commands
 
-See [Makefile](./app/Makefile)
+See [Makefile](./app/makefile)
 
 ### Demo
 
