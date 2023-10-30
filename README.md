@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/e81546508c29ddde0b1b/maintainability)](https://codeclimate.com/github/Asterroth/java-project-61/maintainability)
+[![Java CI](https://github.com/Asterroth/java-project-61/actions/workflows/main.yml/badge.svg)](https://github.com/Asterroth/java-project-61/actions/workflows/main.yml)[![Maintainability](https://api.codeclimate.com/v1/badges/e81546508c29ddde0b1b/maintainability)](https://codeclimate.com/github/Asterroth/java-project-61/maintainability)
 
 # Brain Games
 
