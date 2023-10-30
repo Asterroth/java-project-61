@@ -2,16 +2,11 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class Engine {
-    String question;
-    String correctAnswer;
-
-    public Engine(String question, String correctAnswer) {
-        this.question = question;
-        this.correctAnswer = correctAnswer;
-    }
-
-    public void checkAnswer(String player) {
+final class Engine {
+    private Engine() {  }
+    public static void checkAnswer(String player,
+                                   String question,
+                                   String correctAnswer) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Question: " + question);
         System.out.print("Your answer: ");
