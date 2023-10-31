@@ -2,8 +2,13 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-final class Engine {
-    private Engine() {  }
+public final class Engine {
+    Engine() {  }
+    public static int getMaxRounds() {
+        int maxRounds = 3;
+        return maxRounds;
+    }
+
     public static void checkAnswer(String player,
                                    String question,
                                    String correctAnswer) {
@@ -14,8 +19,15 @@ final class Engine {
         if (answer.equals(correctAnswer)) {
             System.out.println("Correct!");
         } else {
-            Cli.wrongAnswer(correctAnswer, answer, player);
+            wrongAnswer(correctAnswer, answer, player);
             System.exit(0);
         }
+    }
+
+    public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
+        System.out.println("'" + answer
+                + "' is wrong answer ;(. Correct answer was "
+                + "'" + correctAnswer + "'.");
+        System.out.println("Let's try again, " + playerName);
     }
 }

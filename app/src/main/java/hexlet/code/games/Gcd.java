@@ -1,10 +1,15 @@
-package hexlet.code;
+package hexlet.code.games;
 
-final class Gcd {
+import hexlet.code.Cli;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
+
+public final class Gcd {
     private Gcd() {  }
     private static final String DESCRIPTION = "Find the greatest common divisor of given numbers.";
-    public static void runGame(int maxRounds) {
+    public static void runGame() {
         var player = Cli.greeter();
+        var maxRounds = Engine.getMaxRounds();
         System.out.println(DESCRIPTION);
         for (var i = 0; i < maxRounds; i++) {
             var num1 = Utils.getRandom();
@@ -13,7 +18,7 @@ final class Gcd {
             var correctAnswer = calcGCD(num1, num2);
             Engine.checkAnswer(player, question, String.valueOf(correctAnswer));
         }
-        System.out.println("Congratulation, " + player + "!");
+        System.out.println("Congratulations, " + player + "!");
         System.exit(0);
     }
 

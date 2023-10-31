@@ -1,12 +1,17 @@
-package hexlet.code;
+package hexlet.code.games;
 
-final class Progression {
+import hexlet.code.Cli;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
+
+public final class Progression {
     private static final String DESCRIPTION = "What number is missing in the progression?";
     private Progression() {
     }
 
-    public static void runGame(int maxRounds) {
+    public static void runGame() {
         var player = Cli.greeter();
+        var maxRounds = Engine.getMaxRounds();
         System.out.println(DESCRIPTION);
         for (var i = 0; i < maxRounds; i++) {
             var correctAnswer = "";
@@ -26,7 +31,7 @@ final class Progression {
             }
             Engine.checkAnswer(player, String.valueOf(sequence), correctAnswer);
         }
-        System.out.println("Congratulation, " + player + "!");
+        System.out.println("Congratulations, " + player + "!");
         System.exit(0);
     }
 }

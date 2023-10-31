@@ -2,7 +2,7 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-final class Cli {
+public final class Cli {
     private Cli() {  }
     // Print greeter and get player name
     public static String greeter() {
@@ -25,12 +25,5 @@ final class Cli {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
-    }
-    // Print wrong answer message
-    public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
-        System.out.println("'" + answer
-                + "' is wrong answer ;(. Correct answer was "
-                + "'" + correctAnswer + "'.");
-        System.out.println("Let's try again, " + playerName);
     }
 }
