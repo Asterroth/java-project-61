@@ -27,13 +27,3 @@ $src/main/java/hexlet/code/Utils.java,b/8/b89c2b762fb33fa35c34b82bce8c5d678b574
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
 U
 %src/main/java/hexlet/code/Engine.java,8/a/8ad6b44711a0e45b77994b4069acd60756754b7e
-Z
-*src/main/java/hexlet/code/Progression.java,f/2/f2895fc591257528bb5fe142bffae46f900188c3
-S
-#src/main/java/hexlet/code/Calc.java,1/4/14845b3b826d228135f6f74aa7f9f91b95dea922
-R
-"src/main/java/hexlet/code/Gcd.java,e/f/ef148d34cf89ce57cd0b9800a51396380922b88f
-T
-$src/main/java/hexlet/code/Prime.java,0/5/0550bced9df792a89de2206f6ac435b28fddc2e3
-S
-#src/main/java/hexlet/code/Even.java,4/4/44fefc925ca055e7c3a187b5635e5cb5f8cf5aad

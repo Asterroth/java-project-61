@@ -3,7 +3,7 @@ package hexlet.code;
 import java.util.Scanner;
 
 public final class Engine {
-    Engine() {  }
+    private Engine() {  }
     public static int getMaxRounds() {
         int maxRounds = 3;
         return maxRounds;
@@ -20,6 +20,7 @@ public final class Engine {
             System.out.println("Correct!");
         } else {
             wrongAnswer(correctAnswer, answer, player);
+            sc.close();
             System.exit(0);
         }
     }

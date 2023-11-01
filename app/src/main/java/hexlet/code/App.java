@@ -26,6 +26,7 @@ public class App {
                 case "0" -> System.exit(0);
                 default -> {
                     System.out.println("Please enter number 1, 2, 3 ... 6 or 0 for exit.");
+                    scanner.close();
                     System.exit(0);
                 }
             }
