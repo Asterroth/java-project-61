@@ -18,11 +18,11 @@ public class App {
                     Cli.greeter();
                     return;
                 }
-                case "2" -> Even.runGame();
-                case "3" -> Calc.runGame();
-                case "4" -> Gcd.runGame();
-                case "5" -> Progression.runGame();
-                case "6" -> Prime.runGame();
+                case "2" -> Even.genGame();
+                case "3" -> Calc.genGame();
+                case "4" -> Gcd.genGame();
+                case "5" -> Progression.genGame();
+                case "6" -> Prime.genGame();
                 case "0" -> System.exit(0);
                 default -> {
                     System.out.println("Please enter number 1, 2, 3 ... 6 or 0 for exit.");
