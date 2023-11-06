@@ -7,17 +7,17 @@ import hexlet.code.Utils;
 public final class Calc {
     private Calc() {  }
     private static final String DESCRIPTION = "What is the result of the expression?";
-    // Generate game rounds data. Each rows contain array with two elements: question and correct answer
+    private static final int RANDOM_MIN = 0;
+    private static final int RANDOM_MAX = 100;
     public static void genGame() {
-        var player = Cli.greeter();
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
+        String[] roundData;
+        var player = Cli.greeter();
         System.out.println(DESCRIPTION);
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
-            var num1 = Utils.getRandom();
-            var num2 = Utils.getRandom();
-            var action = mathAction();
-            gameData[i][0] = num1 + " " + action + " " + num2;
-            gameData[i][1] = calcAction(num1, num2, action);
+            roundData = genRound();
+            gameData[i][0] = roundData[0];
+            gameData[i][1] = roundData[1];
         }
         Engine.runGame(player, gameData);
     }
@@ -35,7 +35,8 @@ public final class Calc {
     }
     // Random choice of math action
     public static String mathAction() {
-        var actionId = Utils.getRandom(0, 2);
+        var maxActionCount = 3;
+        var actionId = Utils.getRandom(0, maxActionCount - 1);
         if (actionId == 0) {
             return "+";
         } else if (actionId == 1) {
@@ -43,5 +44,15 @@ public final class Calc {
         } else {
             return "*";
         }
+    }
+    // Generate game rounds data. Each rows contain array with two elements: question and correct answer
+    private static String[] genRound() {
+        String[] roundData = new String[2];
+        var num1 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
+        var num2 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
+        var action = mathAction();
+        roundData[0] = num1 + " " + action + " " + num2;
+        roundData[1] = calcAction(num1, num2, action);
+        return roundData;
     }
 }

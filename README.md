@@ -8,7 +8,7 @@ CLI games bundle
 
 ## Requirements
 
-* Java 20+
+* Java 17+
 * Linux
 * Make tool
 

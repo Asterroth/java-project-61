@@ -37,3 +37,7 @@ X
 0src/main/java/hexlet/code/games/Progression.java,d/8/d8f55039f5971eee0d5f97ad25d10d474443fbfb
 Y
 )src/main/java/hexlet/code/games/Even.java,f/2/f2263c0a8814aec3bc3400cae665d9d1285bfb92
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+7
+gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9

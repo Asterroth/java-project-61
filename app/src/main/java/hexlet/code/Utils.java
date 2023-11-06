@@ -12,9 +12,4 @@ public final class Utils {
     public static int getRandom(int min, int max) {
         return RANDOM_NUMBER.nextInt(min, max);
     }
-
-    // Generate a random number in range [0; 100)
-    public static int getRandom() {
-        return RANDOM_NUMBER.nextInt(0, 100);
-    }
 }
