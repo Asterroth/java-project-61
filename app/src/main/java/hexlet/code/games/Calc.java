@@ -1,25 +1,23 @@
 package hexlet.code.games;
 
-import hexlet.code.Cli;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public final class Calc {
     private Calc() {  }
     private static final String DESCRIPTION = "What is the result of the expression?";
-    private static final int RANDOM_MIN = 0;
-    private static final int RANDOM_MAX = 100;
+    private static final int RANDOM_MIN = 0; // Minimum random number used in the game
+    private static final int RANDOM_MAX = 100; // Maximum random number used in the game
+    // Line-up of game data
     public static void genGame() {
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
         String[] roundData;
-        var player = Cli.greeter();
-        System.out.println(DESCRIPTION);
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
             roundData = genRound();
             gameData[i][0] = roundData[0];
             gameData[i][1] = roundData[1];
         }
-        Engine.runGame(player, gameData);
+        Engine.runGame(DESCRIPTION, gameData);
     }
     // Calculation of generated data
     public static String calcAction(int num1, int num2, String action) {
@@ -35,17 +33,11 @@ public final class Calc {
     }
     // Random choice of math action
     public static String mathAction() {
-        var maxActionCount = 3;
-        var actionId = Utils.getRandom(0, maxActionCount - 1);
-        if (actionId == 0) {
-            return "+";
-        } else if (actionId == 1) {
-            return "-";
-        } else {
-            return "*";
-        }
+        String[] actionsArray = {"+", "-", "*"};
+        var actionId = Utils.getRandom(0, actionsArray.length - 1);
+        return actionsArray[actionId];
     }
-    // Generate game rounds data. Each rows contain array with two elements: question and correct answer
+    // Generate game round data. Returns array of two elements: question and correct answer
     private static String[] genRound() {
         String[] roundData = new String[2];
         var num1 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);

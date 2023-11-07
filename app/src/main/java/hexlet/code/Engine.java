@@ -5,8 +5,10 @@ import java.util.Scanner;
 public final class Engine {
     public static final int MAX_ROUNDS = 3;
     private Engine() {  }
-
-    public static void runGame(String player, String[][] gameData) {
+    // Main method running the games
+    public static void runGame(String gameDescription, String[][] gameData) {
+        var player = Cli.greeter();
+        System.out.println(gameDescription);
         Scanner scan = new Scanner(System.in);
         for (var i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + gameData[i][0]);
@@ -23,7 +25,7 @@ public final class Engine {
         System.out.println("Congratulations, " + player + "!");
         System.exit(0);
     }
-
+    // Wrong answer message
     public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
         System.out.println("'" + answer
                 + "' is wrong answer ;(. Correct answer was "
