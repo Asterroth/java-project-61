@@ -19,7 +19,7 @@ public final class Gcd {
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
-    static int calcGCD(int first, int second) {
+    private static int calcGCD(int first, int second) {
         return second == 0 ? first : calcGCD(second, first % second);
     }
     // Generate game round data. Returns array of two elements: question and correct answer
@@ -27,7 +27,7 @@ public final class Gcd {
         String[] roundData = new String[2];
         var randValue1 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
         var randValue2 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
-        roundData[0] = String.valueOf(randValue1) + " " + String.valueOf(randValue2);
+        roundData[0] = randValue1 + " " + randValue2;
         roundData[1] = String.valueOf(calcGCD(randValue1, randValue2));
         return roundData;
     }

@@ -23,6 +23,7 @@ public final class Engine {
             }
         }
         System.out.println("Congratulations, " + player + "!");
+        scan.close();
         System.exit(0);
     }
     // Wrong answer message
