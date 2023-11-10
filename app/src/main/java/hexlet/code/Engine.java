@@ -18,13 +18,11 @@ public final class Engine {
                 System.out.println("Correct!");
             } else {
                 wrongAnswer(gameData[i][1], answer, player);
-                scan.close();
-                System.exit(0);
+                return;
             }
         }
         System.out.println("Congratulations, " + player + "!");
         scan.close();
-        System.exit(0);
     }
     // Wrong answer message
     public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
