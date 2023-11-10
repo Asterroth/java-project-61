@@ -11,11 +11,12 @@ public final class Calc {
     // Line-up of game data
     public static void genGame() {
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
-        String[] roundData;
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
-            roundData = genRound();
-            gameData[i][0] = roundData[0];
-            gameData[i][1] = roundData[1];
+            var num1 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
+            var num2 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
+            var action = mathAction();
+            gameData[i][0] = num1 + " " + action + " " + num2;
+            gameData[i][1] = calcAction(num1, num2, action);
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
@@ -36,15 +37,5 @@ public final class Calc {
         String[] actionsArray = {"+", "-", "*"};
         var actionId = Utils.getRandom(0, actionsArray.length - 1);
         return actionsArray[actionId];
-    }
-    // Generate game round data. Returns array of two elements: question and correct answer
-    private static String[] genRound() {
-        String[] roundData = new String[2];
-        var num1 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
-        var num2 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
-        var action = mathAction();
-        roundData[0] = num1 + " " + action + " " + num2;
-        roundData[1] = calcAction(num1, num2, action);
-        return roundData;
     }
 }

@@ -16,11 +16,13 @@ public final class Progression {
     // Line-up of game data
     public static void genGame() {
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
-        String[] roundData;
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
-            roundData = genRound();
-            gameData[i][0] = roundData[0];
-            gameData[i][1] = roundData[1];
+            var question = genSequence();
+            String[] seqArray = question.split(" ");
+            var unknownItem = Utils.getRandom(0, seqArray.length - 1);
+            gameData[i][1] = String.valueOf(seqArray[unknownItem]);
+            seqArray[unknownItem] = "..";
+            gameData[i][0] = String.join(" ", seqArray);
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
@@ -34,16 +36,5 @@ public final class Progression {
             item += step;
         }
         return sequence.toString();
-    }
-    // Generate game round data. Returns array of two elements: question and correct answer
-    private static String[] genRound() {
-        String[] roundData = new String[2];
-        var question = genSequence();
-        String[] seqArray = question.split(" ");
-        var unknownItem = Utils.getRandom(0, seqArray.length - 1);
-        roundData[1] = String.valueOf(seqArray[unknownItem]);
-        seqArray[unknownItem] = "..";
-        roundData[0] = String.join(" ", seqArray);
-        return roundData;
     }
 }
