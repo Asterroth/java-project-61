@@ -5,7 +5,6 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
-
 import java.util.Scanner;
 
 public class App {
@@ -13,29 +12,15 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         Cli.printMenu();
         switch (scanner.next()) {
-            case "1":
-                Cli.greeter();
-                break;
-            case "2":
-                Even.genGame();
-                break;
-            case "3":
-                Calc.genGame();
-                break;
-            case "4":
-                Gcd.genGame();
-                break;
-            case "5":
-                Progression.genGame();
-                break;
-            case "6":
-                Prime.genGame();
-                break;
-            case "0":
-                break;
-            default:
-                System.out.println("Please enter number 1, 2, 3 ... 6 or 0 for exit.");
-                break;
+            case "1" -> Cli.greeter();
+            case "2" -> Even.genGame();
+            case "3" -> Calc.genGame();
+            case "4" -> Gcd.genGame();
+            case "5" -> Progression.genGame();
+            case "6" -> Prime.genGame();
+            case "0" -> {
+            }
+            default -> System.out.println("Please enter number 1, 2, 3 ... 6 or 0 for exit.");
         }
         scanner.close();
     }
