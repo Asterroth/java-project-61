@@ -4,7 +4,6 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public final class Calc {
-    private Calc() {  }
     private static final String DESCRIPTION = "What is the result of the expression?";
     private static final int RANDOM_MIN = 0; // Minimum random number used in the game
     private static final int RANDOM_MAX = 100; // Maximum random number used in the game

@@ -4,8 +4,6 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public final class Even {
-    private Even() {  }
-
     private static final String DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     private static final int RANDOM_MIN = 0;
     private static final int RANDOM_MAX = 100;

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public final class Engine {
     public static final int MAX_ROUNDS = 3;
-    private Engine() {  }
     // Main method running the games
     public static void runGame(String gameDescription, String[][] gameData) {
         var player = Cli.greeter();
@@ -17,18 +16,14 @@ public final class Engine {
             if (answer.equals(gameData[i][1])) {
                 System.out.println("Correct!");
             } else {
-                wrongAnswer(gameData[i][1], answer, player);
+                System.out.println("'" + answer
+                        + "' is wrong answer ;(. Correct answer was "
+                        + "'" + gameData[i][1] + "'.");
+                System.out.println("Let's try again, " + player + "!");
                 return;
             }
         }
         System.out.println("Congratulations, " + player + "!");
         scan.close();
-    }
-    // Wrong answer message
-    public static void wrongAnswer(String correctAnswer, String answer, String playerName) {
-        System.out.println("'" + answer
-                + "' is wrong answer ;(. Correct answer was "
-                + "'" + correctAnswer + "'.");
-        System.out.println("Let's try again, " + playerName + "!");
     }
 }

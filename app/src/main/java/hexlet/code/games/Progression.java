@@ -11,8 +11,6 @@ public final class Progression {
     private static final int MIN_STEP = 1; // Minimum value of step in sequence
     private static final int SEQ_LENGTH = 6; // Sequence (progression) length
 
-    private Progression() {
-    }
     // Line-up of game data
     public static void genGame() {
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
