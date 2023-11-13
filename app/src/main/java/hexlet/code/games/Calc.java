@@ -15,12 +15,12 @@ public final class Calc {
             var num2 = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
             var action = mathAction();
             gameData[i][0] = num1 + " " + action + " " + num2;
-            gameData[i][1] = calcAction(num1, num2, action);
+            gameData[i][1] = calculate(num1, num2, action);
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
     // Calculation of generated data
-    public static String calcAction(int num1, int num2, String action) {
+    public static String calculate(int num1, int num2, String action) {
         var result = 0;
         if (action.equals("+")) {
             result = num1 + num2;
