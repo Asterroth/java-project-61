@@ -26,8 +26,10 @@ public final class Calc {
             result = num1 + num2;
         } else if (action.equals("*")) {
             result = num1 * num2;
-        } else {
+        } else if (action.equals("-")) {
             result = num1 - num2;
+        } else {
+            return null;
         }
         return String.valueOf(result);
     }
