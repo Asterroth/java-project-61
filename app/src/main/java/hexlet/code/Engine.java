@@ -26,7 +26,7 @@ public final class Engine {
         System.out.println("Congratulations, " + player + "!");
         scan.close();
     }
-
+    // Getting greet and player name
     public static String greeter() {
         Scanner scan = new Scanner(System.in);
         String userName;

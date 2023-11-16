@@ -18,6 +18,7 @@ public final class Gcd {
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
+    // Calculate GCD of two numbers
     private static int calcGCD(int first, int second) {
         return second == 0 ? first : calcGCD(second, first % second);
     }

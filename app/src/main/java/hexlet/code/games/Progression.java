@@ -32,7 +32,7 @@ public final class Progression {
         }
         return sequence.toString();
     }
-
+    // Preparing of single game round data
     private static String[] prepareGameData(String seq) {
         var roundData = new String[2];
         String[] seqArray = seq.split(" ");
