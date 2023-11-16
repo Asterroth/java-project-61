@@ -6,7 +6,7 @@ public final class Engine {
     public static final int MAX_ROUNDS = 3;
     // Main method running the games
     public static void runGame(String gameDescription, String[][] gameData) {
-        var player = Cli.greeter();
+        var player = greeter();
         System.out.println(gameDescription);
         Scanner scan = new Scanner(System.in);
         for (var i = 0; i < MAX_ROUNDS; i++) {
@@ -25,5 +25,15 @@ public final class Engine {
         }
         System.out.println("Congratulations, " + player + "!");
         scan.close();
+    }
+
+    public static String greeter() {
+        Scanner scan = new Scanner(System.in);
+        String userName;
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        userName = scan.nextLine();
+        System.out.println("Hello, " + userName + "!");
+        return userName;
     }
 }
