@@ -15,12 +15,9 @@ public final class Progression {
     public static void genGame() {
         String[][] gameData = new String[Engine.MAX_ROUNDS][2];
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
-            var question = genSequence();
-            String[] seqArray = question.split(" ");
-            var unknownItem = Utils.getRandom(0, seqArray.length - 1);
-            gameData[i][1] = String.valueOf(seqArray[unknownItem]);
-            seqArray[unknownItem] = "..";
-            gameData[i][0] = String.join(" ", seqArray);
+            var roundData = prepareGameData(genSequence());
+            gameData[i][0] = roundData[0];
+            gameData[i][1] = roundData[1];
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
@@ -35,6 +32,14 @@ public final class Progression {
         }
         return sequence.toString();
     }
+
+    private static String[] prepareGameData(String seq) {
+        var roundData = new String[2];
+        String[] seqArray = seq.split(" ");
+        var unknownItem = Utils.getRandom(0, seqArray.length - 1);
+        roundData[1] = String.valueOf(seqArray[unknownItem]);
+        seqArray[unknownItem] = "..";
+        roundData[0] = String.join(" ", seqArray);
+        return roundData;
+    }
 }
-// 1-й генерит последовательность полную в виде стринга
-// 2-й м-д генерит данные игры
