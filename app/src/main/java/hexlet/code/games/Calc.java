@@ -21,17 +21,20 @@ public final class Calc {
     }
     // Calculation of generated data
     public static String calculate(int num1, int num2, String action) {
-        var result = 0;
-        if (action.equals("+")) {
-            result = num1 + num2;
-        } else if (action.equals("*")) {
-            result = num1 * num2;
-        } else if (action.equals("-")) {
-            result = num1 - num2;
-        } else {
-            return null;
+        switch (action) {
+            case "+" -> {
+                return String.valueOf(num1 + num2);
+            }
+            case "*" -> {
+                return String.valueOf(num1 * num2);
+            }
+            case "-" -> {
+                return String.valueOf(num1 - num2);
+            }
+            default -> {
+                return null;
+            }
         }
-        return String.valueOf(result);
     }
     // Random choice of math action
     public static String mathAction() {

@@ -14,20 +14,24 @@ public final class Prime {
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
             var randValue = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
             gameData[i][0] = String.valueOf(randValue);
-            gameData[i][1] = isPrime(randValue);
+            if (isPrime(randValue)) {
+                gameData[i][1] = "yes";
+            } else {
+                gameData[i][1] = "no";
+            }
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
-    // Return "yes" in case number is prime or "no" otherwise
-    private static String isPrime(int num) {
+    // Return true in case number is prime or false otherwise
+    private static boolean isPrime(int num) {
         if (num < 2) {
-            return "no";
+            return false;
         }
         for (var i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
-                return "no";
+                return false;
             }
         }
-        return "yes";
+        return true;
     }
 }

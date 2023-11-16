@@ -14,13 +14,17 @@ public final class Even {
         for (var i = 0; i < Engine.MAX_ROUNDS; i++) {
             var randValue = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
             gameData[i][0] = String.valueOf(randValue);
-            gameData[i][1] = isEven(randValue);
+            if (isEven(randValue)) {
+                gameData[i][1] = "yes";
+            } else {
+                gameData[i][1] = "no";
+            }
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
 
-    // Return "yes" in case number is even or "no" in case odd
-    private static String isEven(int number) {
-        return number % 2 == 0 ? "yes" : "no";
+    // Return true in case number is even or false in case odd
+    private static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 }

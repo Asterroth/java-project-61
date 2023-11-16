@@ -36,3 +36,5 @@ public final class Progression {
         return sequence.toString();
     }
 }
+// 1-й генерит последовательность полную в виде стринга
+// 2-й м-д генерит данные игры
