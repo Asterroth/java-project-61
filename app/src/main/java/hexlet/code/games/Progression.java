@@ -18,28 +18,20 @@ public final class Progression {
             var firstItem = Utils.getRandom(RANDOM_MIN, RANDOM_MAX);
             var step = Utils.getRandom(MIN_STEP, MAX_STEP);
             var unknownItem = Utils.getRandom(0, SEQ_LENGTH - 1);
-            var roundData = prepareGameData(genSequence(firstItem, step), unknownItem);
-            gameData[i][0] = roundData[0];
-            gameData[i][1] = roundData[1];
+            String[] roundData = genSequence(firstItem, step, SEQ_LENGTH);
+            gameData[i][1] = roundData[unknownItem];
+            roundData[unknownItem] = "..";
+            gameData[i][0] = String.join(" ", roundData);
         }
         Engine.runGame(DESCRIPTION, gameData);
     }
     // Generate random sequence of 6 numbers with random step
-    private static String genSequence(int firstItem, int step) {
+    private static String[] genSequence(int firstItem, int step, int length) {
         StringBuilder sequence = new StringBuilder();
         for (var j = 0; j < SEQ_LENGTH; j++) {
-            sequence.append(String.valueOf(firstItem)).append(" ");
+            sequence.append(firstItem).append(" ");
             firstItem += step;
         }
-        return sequence.toString();
-    }
-    // Preparing of single game round data
-    private static String[] prepareGameData(String seq, int unknownItem) {
-        var roundData = new String[2];
-        String[] seqArray = seq.split(" ");
-        roundData[1] = String.valueOf(seqArray[unknownItem]);
-        seqArray[unknownItem] = "..";
-        roundData[0] = String.join(" ", seqArray);
-        return roundData;
+        return sequence.toString().split(" ");
     }
 }
