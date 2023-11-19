@@ -16,7 +16,7 @@ public final class Gcd {
             gameData[i][0] = randValue1 + " " + randValue2;
             gameData[i][1] = String.valueOf(calcGCD(randValue1, randValue2));
         }
-        Engine.runGame(DESCRIPTION, gameData);
+        Engine.runGame(DESCRIPTION, gameData, false);
     }
     // Calculate GCD of two numbers
     private static int calcGCD(int first, int second) {

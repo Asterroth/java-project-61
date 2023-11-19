@@ -20,7 +20,7 @@ public final class Even {
                 gameData[i][1] = "no";
             }
         }
-        Engine.runGame(DESCRIPTION, gameData);
+        Engine.runGame(DESCRIPTION, gameData, false);
     }
 
     // Return true in case number is even or false in case odd

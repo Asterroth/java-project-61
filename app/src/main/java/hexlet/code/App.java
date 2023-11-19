@@ -12,7 +12,8 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         printMenu();
         switch (scanner.next()) {
-            case "1" -> Engine.greeter();
+            // case "1" -> Engine.greeter();
+            case "1" -> Engine.runGame(null, null, true);
             case "2" -> Even.genGame();
             case "3" -> Calc.genGame();
             case "4" -> Gcd.genGame();

@@ -5,10 +5,21 @@ import java.util.Scanner;
 public final class Engine {
     public static final int MAX_ROUNDS = 3;
     // Main method running the games
-    public static void runGame(String gameDescription, String[][] gameData) {
-        var player = greeter();
-        System.out.println(gameDescription);
+    public static void runGame(String gameDescription, String[][] gameData, boolean greeter) {
         Scanner scan = new Scanner(System.in);
+        //var player = greeter();
+
+        String player;
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        player = scan.nextLine();
+        System.out.println("Hello, " + player + "!");
+        if (greeter) {
+            return;
+        }
+
+
+        System.out.println(gameDescription);
         for (var i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + gameData[i][0]);
             System.out.print("Your answer: ");
@@ -27,13 +38,13 @@ public final class Engine {
         scan.close();
     }
     // Getting greet and player name
-    public static String greeter() {
-        Scanner scan = new Scanner(System.in);
-        String userName;
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        userName = scan.nextLine();
-        System.out.println("Hello, " + userName + "!");
-        return userName;
-    }
+    //public static String greeter() {
+    //    Scanner scan = new Scanner(System.in);
+    //    String userName;
+    //    System.out.println("Welcome to the Brain Games!");
+    //    System.out.print("May I have your name? ");
+    //    userName = scan.nextLine();
+    //    System.out.println("Hello, " + userName + "!");
+    //    return userName;
+    //}
 }

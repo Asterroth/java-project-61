@@ -23,7 +23,7 @@ public final class Progression {
             roundData[unknownItem] = "..";
             gameData[i][0] = String.join(" ", roundData);
         }
-        Engine.runGame(DESCRIPTION, gameData);
+        Engine.runGame(DESCRIPTION, gameData, false);
     }
     // Generate random sequence of 6 numbers with random step
     private static String[] genSequence(int firstItem, int step, int length) {

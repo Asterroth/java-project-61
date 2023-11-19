@@ -20,7 +20,7 @@ public final class Prime {
                 gameData[i][1] = "no";
             }
         }
-        Engine.runGame(DESCRIPTION, gameData);
+        Engine.runGame(DESCRIPTION, gameData, false);
     }
     // Return true in case number is prime or false otherwise
     private static boolean isPrime(int num) {

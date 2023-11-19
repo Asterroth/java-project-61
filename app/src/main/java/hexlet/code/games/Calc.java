@@ -17,7 +17,7 @@ public final class Calc {
             gameData[i][0] = num1 + " " + action + " " + num2;
             gameData[i][1] = calculate(num1, num2, action);
         }
-        Engine.runGame(DESCRIPTION, gameData);
+        Engine.runGame(DESCRIPTION, gameData, false);
     }
     // Calculation of generated data
     public static String calculate(int num1, int num2, String action) {
