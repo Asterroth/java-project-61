@@ -12,9 +12,7 @@ public final class Engine {
         System.out.print("May I have your name? ");
         player = scan.nextLine();
         System.out.println("Hello, " + player + "!");
-        if (greeter) {
-            return;
-        }
+        if (greeter) { return; }
         System.out.println(gameDescription);
         for (var i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + gameData[i][0]);
